@@ -1,0 +1,3 @@
+node_modules
+
+# *html (Prettier would not check/change node_modules or any file ending in html)

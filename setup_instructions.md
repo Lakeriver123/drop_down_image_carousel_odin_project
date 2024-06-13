@@ -8,9 +8,12 @@
 
 // (image loader)
 // 4. npm install --save-dev file-loader
+
 // Note: I am uncertain if i need to manually make folders in /dist
 // if I do the folders would be either bundle.js or index.html
+
 // 5. npm install --save-dev html-webpack-plugin
+// 6. manually create webpack.config.js and paste in the below code
 
 // config file
 // const path = require('path');
@@ -59,6 +62,33 @@
 
 // 6. Update ESLint config to extend prettier
 // add: extends: ["prettier"], above rules:
+
+copy this code into eslint.config.mjs
+
+<!-- import globals from "globals";
+import pluginJs from "@eslint/js";
+import prettierConfig from "eslint-config-prettier";
+import prettierPlugin from "eslint-plugin-prettier";
+
+export default [
+  {
+    files: ["**/*.js"],
+    languageOptions: {
+      globals: globals.browser,
+      ecmaVersion: "latest",
+      sourceType: "module",
+    },
+    plugins: {
+      prettier: prettierPlugin,
+    },
+    extends: ["prettier"],
+    rules: {
+      ...prettierConfig.rules,
+      "prettier/prettier": "error",
+    },
+  },
+  pluginJs.configs.recommended,
+]; -->
 
 // 7. Lots of customization available
 // 1. .prettierignore file allows you to ignore folders or file types
