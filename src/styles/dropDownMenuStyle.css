@@ -1,0 +1,11 @@
+.drop-down-menu-title-element {
+  color: red;
+}
+
+.drop-down-menu-items-container {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
